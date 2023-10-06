@@ -100,7 +100,7 @@ curl -X POST "IP/v1/config"
 
 ---
 
-**Recibir una configuración al dispositivo (GET)**
+**Receive a configuration to the device (GET)**
 **/v1/get\_config**
 curl -X GET "IP/v1/config" -H "X-DTpanel: token"   
 
