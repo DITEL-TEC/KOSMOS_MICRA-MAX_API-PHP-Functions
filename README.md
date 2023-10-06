@@ -101,7 +101,6 @@ curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
 **Endpoints:**
 
 **Send a configuration to the device (POST)**
-
 **/v1/post\_config**
 
 curl -X POST "IP/v1/config"  
