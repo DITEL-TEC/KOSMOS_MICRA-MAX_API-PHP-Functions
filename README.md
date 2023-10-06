@@ -104,154 +104,154 @@ curl -X POST "IP/v1/config"
 curl -X GET "IP/v1/config" -H "X-DTpanel: token"   
 
 **RESPONSE BODY:** *200*
-{
-`  `"inputType": {
-`	`"processInputType": null,
-`	`"loadCellInputType": {
-`  	`"loadCellInputTypeValues": "150mv"
-`	`},
-`	`"thermometerInputType": null
-`  `},
-`  `"display": {
-`	`"optionsOfDisplayConfig": {
-`  	`"decimalsDisplay": 2,
-`  	`"linearisationPoints": 11,
-`  	`"roundingFilter": "01",
-`  	`"balancedFilter": 1
-`	`},
-`	`"values": [
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`},
-`  	`{
-`    	`"inputValue": 0,
-`    	`"displayValue": 0
-`  	`}
-`	`],
-`	`"displayInputError": "off",
-`	`"displayEco": {
-`  	`"ecoState": "off",
-`  	`"ecoValue": 0
-`	`},
-`	`"brightType": "high",
-`	`"tareValue": 1,
-`	`"runModeColor": "green",
-`	`"progModeColor": "orange"
-`  `},
-`  `"setPoints": [
-`	`{
-`  	`"onOffType": "off",
-`  	`"value": 0,
-`  	`"comparisonValue": "net",
-`  	`"actionMode": "high",
-`  	`"noNcType": "no",
-`  	`"colorAlarmType": "noChange",
-`  	`"activationType": "delay",
-`  	`"activationValue": 0
-`	`},
-`	`{
-`  	`"onOffType": "off",
-`  	`"value": 0,
-`  	`"comparisonValue": "net",
-`  	`"actionMode": "high",
-`  	`"noNcType": "no",
-`  	`"colorAlarmType": "noChange",
-`  	`"activationType": "delay",
-`  	`"activationValue": 0
-`	`},
-`	`{
-`  	`"onOffType": "off",
-`  	`"value": 0,
-`  	`"comparisonValue": "net",
-`  	`"actionMode": "high",
-`  	`"noNcType": "no",
-`  	`"colorAlarmType": "noChange",
-`  	`"activationType": "delay",
-`  	`"activationValue": 0
-`	`},
-`	`{
-`  	`"onOffType": "off",
-`  	`"value": 0,
-`  	`"comparisonValue": "net",
-`  	`"actionMode": "high",
-`  	`"noNcType": "no",
-`  	`"colorAlarmType": "noChange",
-`  	`"activationType": "delay",
-`  	`"activationValue": 0
-`	`}
-`  `],
-`  `"rssConfig": {
-`	`"bauds": 9600,
-`	`"id": 1,
-`	`"protocol": "ascii",
-`	`"replyDelay": "no\_delay"
-`  `},
-`  `"ipAddress": null,
-`  `"analogueConfig": {
-`	`"displayHigh": 0,
-`	`"displayLow": 0,
-`	`"overrange": "high"
-`  `},
-`  `"logicFunctionConfig": {
-`	`"pin2": 1,
-`	`"pin3": 2,
-`	`"pin4": 6
-`  `},
-`  `"programmingLockCodeConfig": {
-`	`"code": 0,
-`	`"lkSetPoints1": false,
-`	`"lkSetPoints2": false,
-`	`"lkSetPoints3": false,
-`	`"lkSetPoints4": false,
-`	`"input": false,
-`	`"display": false,
-`	`"analogueOutput": false,
-`	`"rsOutput": false,
-`	`"logicFunctions": false,
-`	`"tareKey": false,
-`	`"directSetpoints": false,
-`	`"brightnessColor": false,
-`	`"filterP": false,
-`	`"maxMin": false
-`  `}
-}
+{  
+`  `"inputType": {  
+`	`"processInputType": null,  
+`	`"loadCellInputType": {  
+`  	`"loadCellInputTypeValues": "150mv"  
+`	`},  
+`	`"thermometerInputType": null  
+`  `},  
+`  `"display": {  
+`	`"optionsOfDisplayConfig": {  
+`  	`"decimalsDisplay": 2,  
+`  	`"linearisationPoints": 11,  
+`  	`"roundingFilter": "01",  
+`  	`"balancedFilter": 1  
+`	`},  
+`	`"values": [  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`},  
+`  	`{  
+`    	`"inputValue": 0,  
+`    	`"displayValue": 0  
+`  	`}  
+`	`],  
+`	`"displayInputError": "off",  
+`	`"displayEco": {  
+`  	`"ecoState": "off",  
+`  	`"ecoValue": 0  
+`	`},  
+`	`"brightType": "high",  
+`	`"tareValue": 1,  
+`	`"runModeColor": "green",  
+`	`"progModeColor": "orange"  
+`  `},  
+`  `"setPoints": [  
+`	`{  
+`  	`"onOffType": "off",  
+`  	`"value": 0,  
+`  	`"comparisonValue": "net",  
+`  	`"actionMode": "high",  
+`  	`"noNcType": "no",  
+`  	`"colorAlarmType": "noChange",  
+`  	`"activationType": "delay",  
+`  	`"activationValue": 0  
+`	`},  
+`	`{  
+`  	`"onOffType": "off",  
+`  	`"value": 0,  
+`  	`"comparisonValue": "net",  
+`  	`"actionMode": "high",  
+`  	`"noNcType": "no",  
+`  	`"colorAlarmType": "noChange",  
+`  	`"activationType": "delay",  
+`  	`"activationValue": 0  
+`	`},  
+`	`{  
+`  	`"onOffType": "off",  
+`  	`"value": 0,  
+`  	`"comparisonValue": "net",  
+`  	`"actionMode": "high",  
+`  	`"noNcType": "no",  
+`  	`"colorAlarmType": "noChange",  
+`  	`"activationType": "delay",  
+`  	`"activationValue": 0  
+`	`},  
+`	`{  
+`  	`"onOffType": "off",  
+`  	`"value": 0,  
+`  	`"comparisonValue": "net",  
+`  	`"actionMode": "high",  
+`  	`"noNcType": "no",  
+`  	`"colorAlarmType": "noChange",  
+`  	`"activationType": "delay",  
+`  	`"activationValue": 0  
+`	`}  
+`  `],  
+`  `"rssConfig": {  
+`	`"bauds": 9600,  
+`	`"id": 1,  
+`	`"protocol": "ascii",  
+`	`"replyDelay": "no\_delay"  
+`  `},  
+`  `"ipAddress": null,  
+`  `"analogueConfig": {  
+`	`"displayHigh": 0,  
+`	`"displayLow": 0,  
+`	`"overrange": "high"  
+`  `},  
+`  `"logicFunctionConfig": {  
+`	`"pin2": 1,  
+`	`"pin3": 2,  
+`	`"pin4": 6  
+`  `},  
+`  `"programmingLockCodeConfig": {  
+`	`"code": 0,  
+`	`"lkSetPoints1": false,  
+`	`"lkSetPoints2": false,  
+`	`"lkSetPoints3": false,  
+`	`"lkSetPoints4": false,  
+`	`"input": false,  
+`	`"display": false,  
+`	`"analogueOutput": false,  
+`	`"rsOutput": false,  
+`	`"logicFunctions": false,  
+`	`"tareKey": false,  
+`	`"directSetpoints": false,  
+`	`"brightnessColor": false,  
+`	`"filterP": false,  
+`	`"maxMin": false  
+`  `}  
+}  
 
 ---
 **Recibir información del display (GET)**
