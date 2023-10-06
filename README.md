@@ -114,8 +114,8 @@ curl -X POST "IP/v1/config"
 
 ---
 
-**Receive a configuration to the device (GET)**
-**/v1/get\_config**
+**Receive a configuration to the device (GET)**  
+**/v1/get\_config**  
 curl -X GET "IP/v1/config" -H "X-DTpanel: token"   
 
 **RESPONSE BODY:** *200*  
