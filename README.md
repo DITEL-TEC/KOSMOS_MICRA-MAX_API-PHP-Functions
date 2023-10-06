@@ -49,7 +49,7 @@ Importantly, the user has the ability to modify this Token, providing flexibilit
 
 To ensure effective and secure communication, it is recommended to generate and use a strong and unique Token.
 
-Communication:
+**Communication:**
 
 Communication with the Micra MAX API is done through JSON (JavaScript Object Notation) objects.
 
