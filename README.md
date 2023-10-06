@@ -68,10 +68,10 @@ These prerequisites are essential to ensure proper communication with the Micra 
 **Quick Start Guide:**
 
 Example with cURL:
-curl -vvv -H 'X-DTpanel: **token**' "192.168.1.208/v1/hello.json"
-curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
-
-**RESPONSE BODY:** *200*
+curl -vvv -H 'X-DTpanel: **token**' "192.168.1.208/v1/hello.json"  
+curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"  
+  
+**RESPONSE BODY:** *200*  
 [{"id": 1,"status":"Hello World"}]
 
 **Error Codes or Response Body**
@@ -80,7 +80,7 @@ curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
 400: Invalid request  
 401: Unauthorized  
 404: Resource not found  
-
+  
 ---
 
 **Endpoints:**
@@ -89,320 +89,171 @@ curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
 
 **/v1/post\_config**
 
-curl -X POST "IP/v1/config"
--H "X-DTpanel: token"
--H "Content-type: application/json"
--d @request\_body
-
-*donde @request\_body = json con la configuración*
+curl -X POST "IP/v1/config"  
+-H "X-DTpanel: token"  
+-H "Content-type: application/json"  
+-d @request\_body  
+  
+*Where @request\_body = json with the configuration parameters*  
 **RESPONSE BODY:** *201
+
 ---
 
 **Recibir una configuración al dispositivo (GET)**
 **/v1/get\_config**
-curl -X GET "IP/v1/config" 
-`    `-H "X-DTpanel: token" 
+curl -X GET "IP/v1/config" -H "X-DTpanel: token"   
 
 **RESPONSE BODY:** *200*
-
-
 {
-
 `  `"inputType": {
-
 `	`"processInputType": null,
-
 `	`"loadCellInputType": {
-
 `  	`"loadCellInputTypeValues": "150mv"
-
 `	`},
-
 `	`"thermometerInputType": null
-
 `  `},
-
 `  `"display": {
-
 `	`"optionsOfDisplayConfig": {
-
 `  	`"decimalsDisplay": 2,
-
 `  	`"linearisationPoints": 11,
-
 `  	`"roundingFilter": "01",
-
 `  	`"balancedFilter": 1
-
 `	`},
-
 `	`"values": [
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`},
-
 `  	`{
-
 `    	`"inputValue": 0,
-
 `    	`"displayValue": 0
-
 `  	`}
-
 `	`],
-
 `	`"displayInputError": "off",
-
 `	`"displayEco": {
-
 `  	`"ecoState": "off",
-
 `  	`"ecoValue": 0
-
 `	`},
-
 `	`"brightType": "high",
-
 `	`"tareValue": 1,
-
 `	`"runModeColor": "green",
-
 `	`"progModeColor": "orange"
-
 `  `},
-
 `  `"setPoints": [
-
 `	`{
-
 `  	`"onOffType": "off",
-
 `  	`"value": 0,
-
 `  	`"comparisonValue": "net",
-
 `  	`"actionMode": "high",
-
 `  	`"noNcType": "no",
-
 `  	`"colorAlarmType": "noChange",
-
 `  	`"activationType": "delay",
-
 `  	`"activationValue": 0
-
 `	`},
-
 `	`{
-
 `  	`"onOffType": "off",
-
 `  	`"value": 0,
-
 `  	`"comparisonValue": "net",
-
 `  	`"actionMode": "high",
-
 `  	`"noNcType": "no",
-
 `  	`"colorAlarmType": "noChange",
-
 `  	`"activationType": "delay",
-
 `  	`"activationValue": 0
-
 `	`},
-
 `	`{
-
 `  	`"onOffType": "off",
-
 `  	`"value": 0,
-
 `  	`"comparisonValue": "net",
-
 `  	`"actionMode": "high",
-
 `  	`"noNcType": "no",
-
 `  	`"colorAlarmType": "noChange",
-
 `  	`"activationType": "delay",
-
 `  	`"activationValue": 0
-
 `	`},
-
 `	`{
-
 `  	`"onOffType": "off",
-
 `  	`"value": 0,
-
 `  	`"comparisonValue": "net",
-
 `  	`"actionMode": "high",
-
 `  	`"noNcType": "no",
-
 `  	`"colorAlarmType": "noChange",
-
 `  	`"activationType": "delay",
-
 `  	`"activationValue": 0
-
 `	`}
-
 `  `],
-
 `  `"rssConfig": {
-
 `	`"bauds": 9600,
-
 `	`"id": 1,
-
 `	`"protocol": "ascii",
-
 `	`"replyDelay": "no\_delay"
-
 `  `},
-
 `  `"ipAddress": null,
-
 `  `"analogueConfig": {
-
 `	`"displayHigh": 0,
-
 `	`"displayLow": 0,
-
 `	`"overrange": "high"
-
 `  `},
-
 `  `"logicFunctionConfig": {
-
 `	`"pin2": 1,
-
 `	`"pin3": 2,
-
 `	`"pin4": 6
-
 `  `},
-
 `  `"programmingLockCodeConfig": {
-
 `	`"code": 0,
-
 `	`"lkSetPoints1": false,
-
 `	`"lkSetPoints2": false,
-
 `	`"lkSetPoints3": false,
-
 `	`"lkSetPoints4": false,
-
 `	`"input": false,
-
 `	`"display": false,
-
 `	`"analogueOutput": false,
-
 `	`"rsOutput": false,
-
 `	`"logicFunctions": false,
-
 `	`"tareKey": false,
-
 `	`"directSetpoints": false,
-
 `	`"brightnessColor": false,
-
 `	`"filterP": false,
-
 `	`"maxMin": false
-
 `  `}
-
 }
 
------
+---
 **Recibir información del display (GET)**
 **/v1/get\_display**
 curl -X GET "IP/v1/get\_display" 
