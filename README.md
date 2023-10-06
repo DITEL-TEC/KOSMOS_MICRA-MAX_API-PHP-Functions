@@ -258,29 +258,39 @@ curl -X GET "IP/v1/config" -H "X-DTpanel: token"
 **Receive information from the display (GET)**  
 **/v1/get\_display**  
 curl -X GET "IP/v1/get\_display" -H "X-DTpanel: **token**"  
-**RESPONSE BODY:** *200*
-Respuesta el Json con los datos del display de eses momento, maximo, mínimos y setpoints.  
 
-**Reset tare (POST)**
-**/v1/reset\_tare**
+---
+
+**Reset tare (POST)**  
+**/v1/reset\_tare**  
 curl -X POST "IP/v1/reset\_tare" -H "X-DTpanel: **token**"  
 
-**Reset Max (POST)**
-**/v1/reset\_max**
+---
+
+**Reset Max (POST)**  
+**/v1/reset\_max**  
 curl -X POST "IP/v1/reset\_max" -H "X-DTpanel: **token**"  
 
-**Reset Min (POST)**
-**/v1/reset\_min**
+---
+
+**Reset Min (POST)**  
+**/v1/reset\_min**  
 curl -X POST "IP/v1/reset\_min" -H "X-DTpanel: **token**"  
 
-**Tare (POST)**
-**/v1/tare**
+---
+
+**Tare (POST)**  
+**/v1/tare**  
 curl -X POST "IP/v1/tare" -H "X-DTpanel: **token**"  
 
-**Factory Reset (POST)**
-**/v1/factory\_reset**
+---
+
+**Factory Reset (POST)**  
+**/v1/factory\_reset**  
 curl -X POST "IP/v1/fatory\_reset" -H "X-DTpanel: **token**"  
 
-**Obtener información del equipo (GET)**
-**/v1/get\_info**
+---
+
+**Obtener información del equipo (GET)**  
+**/v1/get\_info**  
 curl -X GET "IP/v1/get\_info" -H "X-DTpanel: **token**"  
