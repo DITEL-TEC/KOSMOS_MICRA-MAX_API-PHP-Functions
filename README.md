@@ -287,7 +287,7 @@ curl -X POST "IP/v1/tare" -H "X-DTpanel: **token**"
 
 **Factory Reset (POST)**  
 **/v1/factory\_reset**  
-curl -X POST "IP/v1/fatory\_reset" -H "X-DTpanel: **token**"  
+curl -X POST "IP/v1/factory\_reset" -H "X-DTpanel: **token**"  
 
 ---
 
