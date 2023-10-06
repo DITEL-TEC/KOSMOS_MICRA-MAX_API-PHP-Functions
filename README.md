@@ -75,11 +75,11 @@ curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
 [{"id": 1,"status":"Hello World"}]
 
 **Error Codes or Response Body**
-200: Success
-201: Success Creation.
-400: Invalid request
-401: Unauthorized
-404: Resource not found
+200: Success  
+201: Success Creation.  
+400: Invalid request  
+401: Unauthorized  
+404: Resource not found  
 
 ---
 
@@ -88,6 +88,7 @@ curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"
 **Send a configuration to the device (POST)**
 
 **/v1/post\_config**
+
 curl -X POST "IP/v1/config"
 -H "X-DTpanel: token"
 -H "Content-type: application/json"
