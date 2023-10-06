@@ -67,9 +67,10 @@ These prerequisites are essential to ensure proper communication with the Micra 
 
 **Quick Start Guide:**
 
-Example with cURL:
+Examples with cURL:  
 curl -vvv -H 'X-DTpanel: **token**' "192.168.1.208/v1/hello.json"  
-curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"  
+
+curl -X GET "192.168.1.208/v1/hello.json" -H "X-DTpanel: **token**"    
   
 **RESPONSE BODY:** *200*  
 [{"id": 1,"status":"Hello World"}]
@@ -103,7 +104,7 @@ curl -X POST "IP/v1/config"
 **/v1/get\_config**
 curl -X GET "IP/v1/config" -H "X-DTpanel: token"   
 
-**RESPONSE BODY:** *200*
+**RESPONSE BODY:** *200*  
 {  
 `  `"inputType": {  
 `	`"processInputType": null,  
@@ -254,43 +255,32 @@ curl -X GET "IP/v1/config" -H "X-DTpanel: token"
 }  
 
 ---
-**Recibir información del display (GET)**
-**/v1/get\_display**
-curl -X GET "IP/v1/get\_display" 
-`    `-H "X-DTpanel: token" 
-
+**Receive information from the display (GET)**  
+**/v1/get\_display**  
+curl -X GET "IP/v1/get\_display" -H "X-DTpanel: **token**"  
 **RESPONSE BODY:** *200*
+Respuesta el Json con los datos del display de eses momento, maximo, mínimos y setpoints.  
 
-Respuesta el Json con los datos del display de eses momento, maximo, mínimos y setpoints.
-
-**Reset de la tara (POST)**
+**Reset tare (POST)**
 **/v1/reset\_tare**
-curl -X POST "IP/v1/reset\_tare" 
-`    `-H "X-DTpanel: token" 
+curl -X POST "IP/v1/reset\_tare" -H "X-DTpanel: **token**"  
 
 **Reset Max (POST)**
 **/v1/reset\_max**
-curl -X POST "IP/v1/reset\_max" 
-`    `-H "X-DTpanel: token" 
+curl -X POST "IP/v1/reset\_max" -H "X-DTpanel: **token**"  
 
 **Reset Min (POST)**
 **/v1/reset\_min**
-curl -X POST "IP/v1/reset\_min" 
-`    `-H "X-DTpanel: token" 
+curl -X POST "IP/v1/reset\_min" -H "X-DTpanel: **token**"  
 
-**Tara (POST)**
+**Tare (POST)**
 **/v1/tare**
-curl -X POST "IP/v1/tare" 
-`    `-H "X-DTpanel: token" 
+curl -X POST "IP/v1/tare" -H "X-DTpanel: **token**"  
 
 **Factory Reset (POST)**
 **/v1/factory\_reset**
-curl -X POST "IP/v1/fatory\_reset" 
-`    `-H "X-DTpanel: token" 
+curl -X POST "IP/v1/fatory\_reset" -H "X-DTpanel: **token**"  
 
 **Obtener información del equipo (GET)**
 **/v1/get\_info**
-curl -X GET "IP/v1/get\_info" 
-`    `-H "X-DTpanel: token" 
-
-Deberíamos obtener: Model Name, Serial-NUmber, Date Manufactured, Software version, Options installed, así como los parámetros de la telemetría del aparato.
+curl -X GET "IP/v1/get\_info" -H "X-DTpanel: **token**"  
