@@ -3,8 +3,6 @@
 //Diseños y tecnología S.A. (DITEL)
 //https://www.ditel.es
 
-//API_PASSWORD ES NECESARIO.
-
 function micra_max_hello($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
