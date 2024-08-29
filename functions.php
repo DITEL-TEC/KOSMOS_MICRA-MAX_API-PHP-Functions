@@ -3,9 +3,18 @@
 //Diseños y tecnología S.A. (DITEL)
 //https://www.ditel.es
 
+<<<<<<< HEAD
 function micra_max_hello($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+//API_PASSWORD ES NECESARIO.
+define("DT_PANEL_TOKEN", "Ditel-AbcD");
+
+function micra_max_hello($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -19,9 +28,15 @@ function micra_max_hello($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_get_config($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_get_config($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -35,9 +50,15 @@ function micra_max_get_config($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_get_display($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_get_display($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -51,9 +72,15 @@ function micra_max_get_display($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_get_info($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_get_info($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -67,9 +94,15 @@ function micra_max_get_info($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_reset_tare($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_reset_tare($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -83,9 +116,15 @@ function micra_max_reset_tare($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_reset_max($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_reset_max($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -98,9 +137,15 @@ function micra_max_reset_max($ip,$token){
     $result = json_decode($response, true);
     return $result;
 }
+<<<<<<< HEAD
 function micra_max_reset_min($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_reset_min($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -113,9 +158,15 @@ function micra_max_reset_min($ip,$token){
     $result = json_decode($response, true);
     return $result;
 }
+<<<<<<< HEAD
 function micra_max_tare($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_tare($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -128,9 +179,15 @@ function micra_max_tare($ip,$token){
     $result = json_decode($response, true);
     return $result;
 }
+<<<<<<< HEAD
 function micra_max_factory_reset($ip,$token){
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_factory_reset($ip){
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
     
@@ -144,11 +201,19 @@ function micra_max_factory_reset($ip,$token){
     return $result;
 }
 
+<<<<<<< HEAD
 function micra_max_post_config($ip,$token,$array){
 
     $api_data_json = json_encode($array);
     $headers = array();
     $headers[] = "X-DTpanel: ". $token;
+=======
+function micra_max_post_config($ip,$array){
+
+    $api_data_json = json_encode($array);
+    $headers = array();
+    $headers[] = "X-DTpanel: ". DT_PANEL_TOKEN;
+>>>>>>> f24122ddc0aa406d13ad8c54592f7c019b88a977
     $headers[] = 'Content-type: application/json';
     $state_ch = curl_init();
         
